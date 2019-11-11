@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:200&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dosis:200&display=swap');
+* {
+    /*tricks the browser into using GPU for infinite loops */
+    transform: translateZ(0);
+    margin: 0;
+}
+html,body {
+    height: 100%;
+}
+body {
+    background: #112 url('https://images.weserv.nl/?url=i.imgur.com/6QJjYMe.jpg')  center no-repeat;
+    background-size:cover;
+    margin: 0;
+    
+    font-family:'Dosis', 'Gill Sans', Calibri, 'Trebuchet MS', sans-serif;
+}
+div.center {
+    margin-top: -80px;
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    width: 100%;
+}
+h1.neon-heading {
+    font-size: 150px;
+    font-weight: 100;
+    /* text-transform: uppercase; */
+    color: #fff;
+}
+h3.neon-heading {
+    font-size: 40px;
+}
+h1.neon-heading.first {
+    color: #e6ffff;
+    text-shadow: 0 -40px 100px, 
+    0 0 2px, 
+    0 0 1em #30b3ff, 
+    0 0 0.5em #30b3ff, 
+    0 0 0.1em #30b3ff,
+    0 10px 3px #000;
+}
+
+h3.neon-heading {
+    color: #fee;
+    text-shadow: 0 -40px 100px, 
+    0 0 2px, 
+    0 0 1em #ff4444, 
+    0 0 0.5em #ff4444, 
+    0 0 0.1em #ff4444,
+    0 10px 3px #000;
+    animation: pulsating 4s infinite;
+}
+/* FLICKERING */
+span.flickering-1 {
+    animation: flickering-1 6s infinite;
+}
+span.flickering-2 {
+    animation: flickering-2 4s infinite;
+}
+span.flickering-3 {
+    animation: flickering-3 5s infinite;
+}
+
+/* ANIMATION */
+@keyframes pulsating {
+    0% {
+        text-shadow: 0 0 0 ;
+        opacity: 0.2;
+        color: rgb(129, 129, 129);
+    }
+    50% {
+        color: #fee;
+        text-shadow: 0 -40px 100px, 
+        0 0 2px, 
+        0 0 1em #ff4444, 
+        0 0 0.5em #ff4444, 
+        0 0 0.1em #ff4444,
+        0 10px 3px #000;
+        opacity: 1;
+    }
+    100% {
+        text-shadow: 0 0 0;
+        color: rgb(129, 129, 129);
+        opacity: 0.2;
+    }
+}
+
+/* BLINK uses alot of CPU 
+@keyframes blink {
+    78% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+    79%{
+        color: #333;
+    }
+    80% {
+
+    text-shadow: none;
+    }
+    81% {
+    color: inherit;
+    text-shadow: inherit;
+    }
+    82% {
+    color: #333;
+    text-shadow: none;
+    }
+    83% {
+    color: inherit;
+    text-shadow: inherit;
+    }
+    92% {
+    color: #333;
+    text-shadow: none;
+    }
+    92.5% {
+    color: inherit;
+    text-shadow: inherit;
+    }
+}
+*/
+
+@keyframes flickering-1 {
+    0% {opacity: 1;}
+    52% {opacity: 1;}
+    55% {opacity: 0;}
+    56% {opacity: 1;}
+    100% {opacity: 1;}
+}
+@keyframes flickering-2 {
+    0% {opacity: 1;}
+    42% {opacity: 1;}
+    45% {opacity: 0;}
+    46% {opacity: 1;}
+    68% {opacity: 1;}
+    69% {opacity: 0;}
+    70% {opacity: 1;}
+    73% {opacity: 0;}
+    74% {opacity: 1;}
+    100% {opacity: 1;}
+}
+@keyframes flickering-3 {
+    0% {opacity: 1;}
+    82% {opacity: 1;}
+    84% {opacity: 0;}
+    85% {opacity: 1;}
+    87% {opacity: 0;}
+    88% {opacity: 1;}
+    90% {opacity: 0;}
+    91% {opacity: 1;}
+    100% {opacity: 1;}
+
+}
+
+
+
+
+
