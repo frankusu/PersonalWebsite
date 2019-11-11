@@ -86,6 +86,75 @@ span.flickering-3 {
     }
 }
 
+/* BUTTON */
+/* follow me @nodws */
+#btn-twtr{
+    clear:both;
+    color:#fff;
+    border:2px solid;
+    border-radius:3px;
+    text-align:center;
+    text-decoration:none;
+    display:block;
+    font-family:sans-serif;
+    font-size:14px;
+    width:13em;
+    padding:5px 10px;
+    font-weight:600;
+    position:absolute;
+    bottom:20px;
+    left:0;
+    right:0;
+    margin:0 auto;
+    background:rgba(0,0,0,0.2);
+    box-shadow:0 0 0px 3px rgba(0,0,0,0.2);
+    opacity:0.4
+  }#btn-twtr:hover{color:#fff;opacity:1}
+
+  .btn {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    border: 3px solid rgba(0,0,0,0.2);
+    white-space: nowrap;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 300;
+    width: auto;
+    white-space: pre-wrap;
+    padding:5px 10px;
+    transition: all 0.3s ease;
+    -webkit-appearance: none;
+    font-family: "Dosis", sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+  }
+  @media (min-width: 480px) {
+    .btn {
+      width: auto;
+    }
+  }
+  .btn:hover {
+    animation: intermittente 0.01s infinite alternate;
+    box-shadow: 0px 0px 35px rgba(204, 0, 0, 0.3), 0 0 11px rgba(204, 0, 0, 0.3), 0 0 2px rgba(255, 0, 0, 0.3), 0 0 1px rgba(204, 0, 0, 0.3), 0 0px 17px rgba(204, 0, 0, 0.3), inset 0px 0 17px rgba(204, 0, 0, 0.3), inset 0px 0 30px rgba(204, 0, 0, 0.3);
+  }
+
+  @keyframes intermittente {
+    75% {
+      opacity: 0.7;
+    }
+  }
 /* BLINK uses alot of CPU 
 @keyframes blink {
     78% {
