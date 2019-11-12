@@ -3,15 +3,19 @@
 @import url('https://fonts.googleapis.com/css?family=Londrina+Outline&display=swap');
 * {
     /*tricks the browser into using GPU for infinite loops */
-    transform: translateZ(0);
+    /* transform: translateZ(0); background breaks on safari*/
     margin: 0;
 }
 html,body {
     height: 100%;
 }
 body {
-    background: #112 url('https://images.weserv.nl/?url=i.imgur.com/6QJjYMe.jpg')  center no-repeat;
+    background-image: url('https://images.weserv.nl/?url=i.imgur.com/6QJjYMe.jpg');
+    background-color: #112;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size:cover;
+    -ms-background-size: cover;
     -o-background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
